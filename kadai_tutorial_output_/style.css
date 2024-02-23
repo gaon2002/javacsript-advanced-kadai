@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  /* デフォルトの6倍 */
+  font-size: 6em;
+  /* 中央揃え */
+  text-align: center;
+}
+.count{
+  margin: 0;
+  color: #888;
+  font-weight: bold;
+}
+.wrap{
+  margin-top: 20px;
+  padding: 80px 40px;
+  background-color: #666;
+  font-weight: bold;
+  color: #fff;
+}
+/* 正しくタイプされた場合のテキスト */
+.typed{
+  color: lightgreen;
+}
+.mistyped{
+  background-color: red;
+}
