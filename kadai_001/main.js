@@ -5,7 +5,7 @@ let untyped = ''; //未入力文字の変数
 let typed = '';   //入力済み文字の変数
 let score = 0;  //スコアの変数設定
 
-// getElementById()メソッドで文字を表示するためのHTML要素を取得
+// getElementById()メソッドで、文字を表示するためのHTML要素を取得
 const untypedfield = document.getElementById('untyped'); //未入力の文字列、()内の'untyped'はHMTLからとってきたid要素
 const typedfield = document.getElementById('typed'); //入力済み文字列、()内の'untyped'はHMTLからとってきたid要素
 const wrap = document.getElementById('wrap');
