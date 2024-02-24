@@ -73,7 +73,8 @@ const keyPress = (e) => {
     return;
   }
   // 【正タイプの場合】if内容でなければ、以下を実行
-  //正タイプした数をスコアにインクリメントする
+  // 正タイプした数をスコアにインクリメントする
+  // ※変数let score = 0 で数値化しているので、++で数値が加算されるようになる
   score++;
   // 正タイプ時にclassList.remove()メソッドでclass属性（mistyped）を削除し、背景色を元に戻す
   wrap.classList.remove('mistyped');

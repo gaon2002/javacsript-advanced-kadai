@@ -27,6 +27,7 @@ body{
 .typed{
   color: lightgreen;
 }
+/* 誤タイプしたときに背景を赤にする */
 .mistyped{
   background-color: red;
 }
