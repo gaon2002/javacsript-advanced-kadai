@@ -11,6 +11,7 @@ const typedfield = document.getElementById('typed'); //入力済み文字列、(
 const wrap = document.getElementById('wrap');
 const start = document.getElementById('start');
 const count = document.getElementById('count');
+const typeCount = document.getElementById('typecount');
 
 // 複数のテキストを格納する配列を作成、配列には　定数　"定数名" = []（方括弧の中に配列要素を入れる)
 // 変数・定数を宣言するときはコードの上部に記述するのが一般的。
@@ -84,6 +85,10 @@ const keyPress = (e) => {
   typedfield.textContent = typed;
   untypedfield.textContent = untyped;
 
+  // 正タイプであれば、タイプした文字数を表示させる
+  // タイプ数をカウントし、HTML画面に出力させる
+  typecount.textContent = `${score}`;
+  
   console.log(e.key); //タイプしたキーの確認
 
   // 未入力テキストがなくなったら、新しいテキストを表示
