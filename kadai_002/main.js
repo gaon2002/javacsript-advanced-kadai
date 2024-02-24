@@ -126,13 +126,23 @@ const rankCheck = (score) => {
 const gameOver = (id) => {
   // clearInterval　※メソッド: 処理を終了設定する
   clearInterval(id);
-  const result = confirm(rankCheck(score));
+    // 正タイプした文字列をクリア
+    typed = '';
+    // getElementByIdで取得した定数typefieldのHTML要素に変数typedを差し込む
+    typedfield.textContent = typed;
+    // タイマーが0になったら「タイムアップ！」を<div>に表示
+    untypedfield.textContent = `タイムアップ！`;
 
+  // 結果は「タイムアップ！」表示から10ミリ秒後に、結果を表示
+  setTimeout(()=> {
+  // 結果を表示
+    const result = confirm(rankCheck(score));
   // OKボタンがクリックされたらリロードする
   // confim()メソッドで作成したダイアログは「OK」ボタンを押すと戻り値として、tureを取得できる
   if(result == true){
     window.location.reload();
   }
+  }, 10);
 };
 
 // 関数５．カウントダウンタイマー
